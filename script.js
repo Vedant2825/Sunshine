@@ -42,10 +42,11 @@ function timer(){
 }
 
 function goToMessage(){
-    window.location.href = "https://vedant2825.github.io/Message/Message.html";
+    window.location.href = "https://vedant2825.github.io/Sunshine/wensite2.html";
 }
 
 const interval = setInterval(timer, 1000);
+
 
 
 
