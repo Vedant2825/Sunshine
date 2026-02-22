@@ -20,6 +20,7 @@
   display: flex;
   gap: 70px;
 }
+
 .time{
   text-align: 500px 800px;
 }
@@ -27,56 +28,4 @@
 .time{
   font-size: x-large;
   font-weight: 100;
-
-}
-
-.hidden {
-    opacity: 0;
-    transform: translateY(20px);
-    pointer-events: none;
-    transition: all 1.2s ease;
-}
-
-/* Reveal container */
-#surpriseContainer {
-    margin-top: 40px;
-    text-align: center;
-}
-
-/* Romantic message */
-.romantic-text {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
-    animation: fadeIn 2s ease forwards;
-    text-shadow: 0 0 10px rgba(255, 0, 166, 0.4);
-}
-
-/* Romantic glowing button */
-.romantic-btn {
-    padding: 12px 30px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    background: linear-gradient(45deg, #ff00aa, #ff66cc);
-    color: white;
-    transition: all 0.4s ease;
-    box-shadow: 0 0 15px rgba(255, 0, 166, 0.6);
-}
-
-.romantic-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 30px rgba(255, 0, 166, 1);
-}
-
-/* Smooth fade animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
