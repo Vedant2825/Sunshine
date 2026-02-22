@@ -6,20 +6,11 @@ const Seconds = document.getElementById('seconds');
 const targetDate = new Date("April 1 2026 00:00:00").getTime();
 
 function timer () {
+
     const currentDate = new Date().getTime();
     const distance = targetDate - currentDate;
 
-    const days = Math.floor(distance / 1000 / 60 / 60 / 24);
-    const hours = Math.floor(distance / 1000 / 60 / 60) % 24;
-    const minutes = Math.floor(distance / 1000 / 60) % 60;
-    const seconds = Math.floor(distance / 1000) % 60;
-
-    Days.innerHTML = days;
-    Hours.innerHTML = hours;
-    Minutes.innerHTML = minutes;
-    Seconds.innerHTML = seconds;
-
-    if(distance <= 0){
+    if (distance <= 0) {
 
         Days.innerHTML = "00";
         Hours.innerHTML = "00";
@@ -27,16 +18,29 @@ function timer () {
         Seconds.innerHTML = "00";
 
         document.getElementById("amx").innerHTML =
-        `TIME FOR UR SURPRISE MY SUNSHINEEEEEE <33 
-        <br><br>
-        <button onclick="goToMessage()">Click here 💌</button>`;
+        "TIME FOR UR SURPRISE MY SUNSHINEEEEEE <33";
 
-        clearInterval(interval); // stops timer
+        document.getElementById("surpriseContainer")
+        .classList.remove("hidden");
+
+        clearInterval(interval);
+        return;
     }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(distance / (1000 * 60 * 60)) % 24;
+    const minutes = Math.floor(distance / (1000 * 60)) % 60;
+    const seconds = Math.floor(distance / 1000) % 60;
+
+    Days.innerHTML = days;
+    Hours.innerHTML = hours;
+    Minutes.innerHTML = minutes;
+    Seconds.innerHTML = seconds;
 }
 
 function goToMessage(){
-    window.location.href = "https://vedant2825.github.io/Message/Message.html";
+    window.location.href =
+    "https://vedant2825.github.io/Message/Message.html";
 }
 
 const interval = setInterval(timer, 1000);
