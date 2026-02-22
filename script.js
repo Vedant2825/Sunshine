@@ -3,7 +3,7 @@ const Hours = document.getElementById('hours');
 const Minutes = document.getElementById('minutes');
 const Seconds = document.getElementById('seconds');
 
-const targetDate = new Date("April 1 2026 00:00:00").getTime();
+const targetDate = new Date("February 22 2026 19:43:00").getTime();
 
 function timer () {
 
@@ -44,3 +44,4 @@ function goToMessage(){
 }
 
 const interval = setInterval(timer, 1000);
+
