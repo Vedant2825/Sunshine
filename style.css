@@ -1,31 +1,37 @@
-{
+/* Reset */
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Hero Section */
 .hero{
     height: 100vh;
+
     background-image: url('https://c0.wallpaperflare.com/preview/980/926/362/frame-floral-flower-background.jpg');
-    background-size: 1500px 800px;
+    background-size: cover;          /* fixed */
+    background-position: center;     /* added */
+    background-repeat: no-repeat;    /* added */
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center;   /* horizontal center */
+    justify-content: center; /* vertical center */
+
     color: rgb(255, 0, 166);
 }
 
-.timebox {
-  display: flex;
-  gap: 70px;
+/* Timer container */
+.timebox{
+    display: flex;
+    gap: 70px;
 }
 
+/* Each time block */
 .time{
-  text-align: 500px 800px;
-}
-
-.time{
-  font-size: x-large;
-  font-weight: 100;
+    text-align: center;   /* fixed */
+    font-size: x-large;
+    font-weight: 100;
 }
