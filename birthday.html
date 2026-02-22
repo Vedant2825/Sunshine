@@ -1,48 +1,39 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> NEW SURPRISE </title>
+    <meta charset="UTF-8">
+    <title>Countdown</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
-<div class="hero">
 
-  <div class="middle">
-    <h1 style="font-size:300%;">Ready for ur new surprise sunshine &#128536 &#128536 &#128536 &#128536?</h1>
-    <hr>
-    <p id="amx" style="font-size:70px"></p>
-  </div>
-
-  <h1 style="text-align:center;">Time Left</h1>
-  <div class="timebox">
-    <div class="time">
-      <h2 id="days">00</h2>
-      <p>Days</p>
+    <div class="countdown">
+        <div>
+            <h1 id="days">0</h1>
+            <p>Days</p>
+        </div>
+        <div>
+            <h1 id="hours">0</h1>
+            <p>Hours</p>
+        </div>
+        <div>
+            <h1 id="minutes">0</h1>
+            <p>Minutes</p>
+        </div>
+        <div>
+            <h1 id="seconds">0</h1>
+            <p>Seconds</p>
+        </div>
     </div>
-    <div class="time">
-      <h2 id="hours">00</h2>
-      <p>Hours</p>
-    </div><div class="time">
-      <h2 id="minutes">00</h2>
-      <p>Minutess</p>
-    </div><div class="time">
-      <h2 id="seconds">00</h2>
-      <p>Seconds</p>
+
+    <!-- Surprise Section -->
+    <div id="surpriseContainer" class="hidden">
+        <p id="amx" class="surprise-text"></p>
+        <button id="surpriseBtn" onclick="goToMessage()">Open Your Surprise 💌</button>
     </div>
-  </div>
-</div>
 
- <div id="surpriseContainer" class="hidden">
-    <p id="amx" class="surprise-text"></p>
-    <button id="surpriseBtn" onclick="goToMessage()">Open Your Surprise 💌</button>
-</div>
-
-<script src="script.js"></script>
-
-
+    <script src="script.js"></script>
 </body>
-
 </html>
 
 
