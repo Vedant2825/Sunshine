@@ -6,32 +6,101 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Hero Section */
-.hero{
+/* Background + Centering */
+body{
     height: 100vh;
 
     background-image: url('https://c0.wallpaperflare.com/preview/980/926/362/frame-floral-flower-background.jpg');
-    background-size: cover;          /* fixed */
-    background-position: center;     /* added */
-    background-repeat: no-repeat;    /* added */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     display: flex;
-    flex-direction: column;
-    align-items: center;   /* horizontal center */
-    justify-content: center; /* vertical center */
+    justify-content: center;
+    align-items: center;
 
     color: rgb(255, 0, 166);
 }
 
-/* Timer container */
-.timebox{
+/* Layout container */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Top text */
+.top-text{
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Countdown */
+.countdown{
     display: flex;
     gap: 70px;
 }
 
-/* Each time block */
-.time{
-    text-align: center;   /* fixed */
+.countdown div{
+    text-align: center;
+}
+
+.countdown h1{
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.countdown p{
+    font-size: 1.2rem;
+}
+
+/* Smooth fade-in setup */
+.hidden{
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+/* Reveal animation */
+#surpriseContainer{
+    margin-top: 40px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+#surpriseContainer.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Romantic text */
+.romantic-text{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+/* Romantic glowing button */
+.romantic-btn{
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff00aa, #ff66cc);
+    color: white;
+    transition: 0.4s ease;
+    box-shadow: 0 0 15px rgba(255, 0, 166, 0.6);
+}
+
+.romantic-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 0, 166, 1);
+}
     font-size: x-large;
     font-weight: 100;
 }
+
