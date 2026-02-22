@@ -3,7 +3,7 @@ const Hours = document.getElementById('hours');
 const Minutes = document.getElementById('minutes');
 const Seconds = document.getElementById('seconds');
 
-const targetDate = new Date("August 2 2025 00:00:00").getTime();
+const targetDate = new Date("April 1 2026 00:00:00").getTime();
 
 function timer () {
     const currentDate = new Date().getTime();
@@ -19,17 +19,24 @@ function timer () {
     Minutes.innerHTML = minutes;
     Seconds.innerHTML = seconds;
 
-    if(distance < 1){
+    if(distance <= 0){
+
         Days.innerHTML = "00";
         Hours.innerHTML = "00";
         Minutes.innerHTML = "00";
         Seconds.innerHTML = "00";
+
+        document.getElementById("amx").innerHTML =
+        `TIME FOR UR SURPRISE MY SUNSHINEEEEEE <33 
+        <br><br>
+        <button onclick="goToMessage()">Click here 💌</button>`;
+
+        clearInterval(interval); // stops timer
     }
-    
-    if (distance < 0) {
-    document.getElementById("amx").innerHTML = "HAPPY BIRTHDAY SUNSHINE";
-    window.location = "https://vedant2825.github.io/Message/Message.html";
-}
 }
 
-setInterval(timer, 1000);
+function goToMessage(){
+    window.location.href = "https://vedant2825.github.io/Message/Message.html";
+}
+
+const interval = setInterval(timer, 1000);
