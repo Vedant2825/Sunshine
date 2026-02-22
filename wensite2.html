@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You MY GORGEOUS PRINCESSSSSSSS ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+    background-size:400% 400%;
+    animation: gradientMove 12s ease infinite;
+    font-family:'Poppins', sans-serif;
+    overflow:hidden;
+}
+
+/* Animated Gradient */
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Floating Hearts */
+.heart{
+    position:absolute;
+    bottom:-20px;
+    font-size:20px;
+    animation: floatUp 8s linear infinite;
+    opacity:0.7;
+}
+
+@keyframes floatUp{
+    0%{
+        transform: translateY(0) scale(1);
+        opacity:0.7;
+    }
+    100%{
+        transform: translateY(-110vh) scale(1.5);
+        opacity:0;
+    }
+}
+
+/* Center Message */
+.container{
+    text-align:center;
+    color:white;
+    animation: fadeIn 3s ease forwards;
+    opacity:0;
+}
+
+h1{
+    font-family:'Great Vibes', cursive;
+    font-size:60px;
+    margin-bottom:20px;
+    text-shadow:0 0 20px rgba(255,255,255,0.7);
+}
+
+p{
+    font-size:20px;
+    font-weight:300;
+}
+
+/* Fade In */
+@keyframes fadeIn{
+    to{
+        opacity:1;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating hearts -->
+<script>
+for(let i=0;i<25;i++){
+    let heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (5 + Math.random()*5) + "s";
+    heart.style.fontSize = (15 + Math.random()*25) + "px";
+    document.body.appendChild(heart);
+}
+</script>
+
+<!-- Romantic Message -->
+<div class="container">
+    <h1>To My Sunshineeeeeeeeeee </h1>
+    <p>
+        HeHEHEHEH SUNSHINEEEEEEE its april 1stt finallllyyy after a wholeee MONTH and heheh apka surrpise unlock hogaya haiiiiiii<br>
+
+So princess, not that its just 10 days before ur CET, i wanna tell u lots of things but me keeps it short, first off IK u got this, we did a lot of studies already and ik that u can do this. <br>>
+U can get COEP 100% and then after CET we will go on so many dates and so many things to do, and we will spend the time of our lives togther, this is jsut a bitter period before we get to the SWEETEST PARTS in our lives so far. And cutie ik it has been very hard for u but i promise it will get so much better once CET ends.
+WE can have late night talks, kalesh and then hehhe uk hehehhehehe and then things LIKE DATES and then um GAMES and ull also join badmintion ka class. 
+<br>
+<br>
+heheh apke liye yeh message is veryyy small but thats what i wannna tell u, we have been thorugh A LOT in these past2 years and now its just these 10 days and i know for sure u can do this 
+I LOVE YOUUU SOOO VERY MUCH MY GORGEOUS PRINCESSS
+<br>
+<br>
+and we are gonna be together FOREVER <333333 💕
+    </p>
+</div>
+
+</body>
+</html>
